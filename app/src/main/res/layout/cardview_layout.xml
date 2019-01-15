@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/cardview"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardElevation="2dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:background="@color/colorPrimary"
+            >
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/dog"
+                    android:scaleType="fitCenter"
+                    android:id="@+id/img_id"
+                    android:background="@color/colorPrimary"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dog"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/img_id"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:id="@+id/name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dog@gmail.com"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/img_id"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="15dp"
+                android:id="@+id/email"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/cbSelect"
+                android:layout_marginTop="15dp"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
